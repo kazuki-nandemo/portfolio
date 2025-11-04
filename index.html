@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazuki Kurata - Web Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            display: block;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #7f8c8d;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .strength-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .strength-item:before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-size: 0.8em;
+        }
+
+        .strength-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #2c3e50;
+            transition: all 0.3s;
+        }
+
+        .skill-tag:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .experience-text {
+            line-height: 2;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e9ecef;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 15px;
+            }
+
+            .profile-image {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Kazuki Kurata" class="profile-image">
+            <h1>Kazuki Kurata</h1>
+            <p class="subtitle">Web Developer</p>
+            <div class="contact-info">
+                <a href="mailto:kuratakazuki00@gmail.com">kuratakazuki00@gmail.com</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <div class="content">
+                <div class="strength-item">
+                    <div class="strength-title">興味を持った技術を徹底的に調査・習得する探究心</div>
+                    <div>Pythonスクレイピングを3日間徹夜で習得</div>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-title">明確な目標設定と継続的努力による達成力</div>
+                    <div>1年で7資格を9か月で取得</div>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-title">課題解決力</div>
+                    <div>テストのエビデンス整理が煩雑化し納期遅延の恐れがあった際、法則性を見つけPythonで自動整理ツールを作成し、1時間で納期に間に合わせた</div>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-title">継続的学習力</div>
+                    <div>常に最新の技術を吸収する姿勢を持ち、現在はClaude CodeなどAI開発分野を自主的に学習中</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="content">
+                <div class="skills-grid">
+                    <div class="skill-tag">Laravel</div>
+                    <div class="skill-tag">PHP</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">Vue.js</div>
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">HTML</div>
+                    <div class="skill-tag">CSS</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">GitHub</div>
+                    <div class="skill-tag">REST API</div>
+                    <div class="skill-tag">JWT</div>
+                    <div class="skill-tag">Docker</div>
+                    <div class="skill-tag">AWS</div>
+                    <div class="skill-tag">EC2</div>
+                    <div class="skill-tag">RDS</div>
+                    <div class="skill-tag">S3</div>
+                    <div class="skill-tag">CloudWatch</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="content">
+                <div class="experience-text">
+                    大学卒業後、3年間の世界一周バックパッカー（65ヶ国）<br>
+                    就職をするより、常識にとらわれず広い視野をもてると判断して行いました。<br>
+                    現地の方とコミュニケーションをとりたかったため、英語・スペイン語を独学で勉強しました。<br>
+                    帰国後、英語の勉強を継続しており、現在TOEIC835点取得しています。
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kazuki Kurata. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
