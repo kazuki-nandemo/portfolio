@@ -83,14 +83,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kazuki-nandemo&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kazuki-nandemo&layout=compact&theme=radical)
-
----
-
 ## 📫 連絡先
 
 お仕事のご相談やお問い合わせは、以下からお気軽にご連絡ください。
